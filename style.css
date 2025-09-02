@@ -1,0 +1,23 @@
+.room{
+    background-image: url("graphics/background.png");
+    width: 1200px;
+    height: 1000px;
+}
+.neighbourWindowClass{
+    display: none;
+}
+.monsterClass{
+    position: absolute;
+    left: 350px;
+    top: 700px;
+}
+.windowClass{
+    position: absolute;
+    left: 15px;
+    top: 250px;
+}
+.bucketClass{
+    position: absolute;
+    left: 750px;
+    
+}
