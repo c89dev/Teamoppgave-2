@@ -5,10 +5,40 @@
 // const stage5_img = "bilde path";
 
 
+function monsterCounter(){
+    if(gameOver != true){
+    monsterSatisfaction--;
+    monsterProgress();
+    }
 
+    console.log(monsterSatisfaction);
+}
 
 function monsterProgress(){
-    if(monsterSatisfaction < 50 && monsterSatisfaction > 40)
+
+    monsterDisplay = document.getElementById("monsterImg");
+
+    if(monsterSatisfaction < 50 && monsterSatisfaction > 40){
+    monsterDisplay.src = stage1_img;
+    }
+    else if(monsterSatisfaction < 40 && monsterSatisfaction > 30){
+        monsterDisplay.src = stage2_img;
+    }
+    else if(monsterSatisfaction < 30 && monsterSatisfaction > 20){
+        monsterDisplay.src = stage3_img;
+    }
+    else if(monsterSatisfaction < 20 && monsterSatisfaction > 10){
+        monsterDisplay.src = stage4_img;
+    }
+    else if(monsterSatisfaction < 1){
+        gameOver = true;
+        monsterDisplay.src = stage4_img;
+        document.getElementById('gameOver').classList.remove('gameOverClass');
+        attack.play();
+    }
+
         
 }
+
+setInterval(monsterCounter, 1000)
 

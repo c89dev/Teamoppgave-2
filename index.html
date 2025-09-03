@@ -12,13 +12,18 @@
             <img class="monsterClass" id="monsterImg">
         </div>
         
-        <div>
+        <div id="bucketDiv">
             <img class="bucketClass" id="bucket" onclick="feedMonster()">
         </div>
         
         <div>
             <img class="windowClass" id="windowID">
             <img class="windowClass neighbourWindowClass" id="neighbourWindowID" onclick="sacrificeNeighbour()">
+            <audio id="scream" src="graphics/scream.mp3"></audio>
+        </div>
+        <div>
+            <img class="gameOverClass gameOverClass2" id="gameOver">
+            <audio id="attack" src="graphics/attack.mp3"></audio>
         </div>
     </section>
 <script src="script.js"></script>

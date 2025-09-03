@@ -1,3 +1,4 @@
+
 .room{
     background-image: url("graphics/background.png");
     width: 1200px;
@@ -10,14 +11,25 @@
     position: absolute;
     left: 350px;
     top: 700px;
+    z-index: 1;
 }
 .windowClass{
     position: absolute;
     left: 15px;
     top: 250px;
+    z-index: 1;
 }
 .bucketClass{
     position: absolute;
-    left: 750px;
-    
+    left: 792px;
+    top: 502px;
+    cursor: pointer;
+    z-index: 1;
+}
+.gameOverClass{
+    display: none;
+}
+.gameOverClass2{
+    position: absolute;
+    z-index: 2;
 }
